@@ -1,3 +1,22 @@
+/* Elementor Normalization before we style our dropzone */
+.elementor-field-group-attach_files {
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.elementor-field-group-attach_files label.elementor-field-label {
+  order: 0;
+}
+
+.elementor-field-group-attach_files .dropzone {
+  order: 1;
+}
+
+.elementor-field-group-attach_files #fileList {
+  order: 2;
+  width: 100%;
+}
+
 .dropzone {
   --curvyness: 5px;
   --container-spacing: 20px;
