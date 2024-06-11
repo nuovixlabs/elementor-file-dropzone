@@ -6,6 +6,12 @@
 
 This plugin enhances Elementor's file input fields by transforming them into a modern, user-friendly dropzone with drag-and-drop functionality.
 
+## TO-DOs
+
+- [ ] Ability for the end users to configure the basic styles
+- [ ] Configure the "drag and drop.." label
+- [ ] Inject styles on elementor edit mode, so it wont look like broken
+
 ## Installation
 
 1. Upload the plugin files to the `/wp-content/plugins/elementor-file-dropzone` directory, or install the plugin through the WordPress plugins screen directly.
