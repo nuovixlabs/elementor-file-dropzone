@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Elementor File Dropzone
  * Description: Enhances Elementor file inputs with a modern dropzone style.
- * Version: 1.0
+ * Version: 1.1
  * Author: Rakesh Mandal
  * Author URI: https://rakeshmandal.com
  * License: GPL-2.0+

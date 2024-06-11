@@ -1,11 +1,12 @@
 /* Elementor Normalization before we style our dropzone */
 .elementor-field-group-attach_files {
   flex-direction: column;
-  align-items: baseline;
+  align-items: baseline !important;
 }
 
 .elementor-field-group-attach_files label.elementor-field-label {
   order: 0;
+  display: block;
 }
 
 .elementor-field-group-attach_files .dropzone {
@@ -18,32 +19,40 @@
 }
 
 .dropzone {
-  --curvyness: 5px;
+  --curvyness: 10px;
   --container-spacing: 20px;
-  --container-push-from-top: 10px;
+  --container-push-from-top: 0px;
 
   --text-size: 16px;
 }
 
 .dropzone {
   width: 100%;
-  padding: var(--container-spacing);
-  border: 2px dashed var(--e-global-color-50c1647, #00407f);
+  padding: var(--container-spacing) 30px;
+  border: 3px dashed #0838686b;
   border-radius: var(--curvyness);
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: var(--container-push-from-top);
+  background: #fffffff7;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.625rem 1.25rem #0000001a;
 }
 
 .dropzone:hover {
-  background-color: var(--e-global-color-d80cd3b, #fff);
+  background-color: #cce6ff;
 }
 
 .dropzone p {
-  margin: 0;
-  font-size: var(--text-size);
+  font-size: 16px !important;
   color: var(--e-global-color-50c1647, #00407f);
+  font-weight: 800 !important;
+  opacity: 0.6;
+  letter-spacing: -0.5px;
 }
 
 .rakesh-hidden {
@@ -51,29 +60,29 @@
 }
 
 #fileList {
-  margin-top: 20px;
 }
 
 .file-item {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 3px;
-  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 13px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 
 .remove-file {
   background-color: #ff4d4d;
   color: white;
   border: none;
-  border-radius: 3px;
-  padding: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 .remove-file:hover {

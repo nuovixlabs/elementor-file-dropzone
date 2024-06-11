@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
 
     $dropzone.on("dragover", function (event) {
       event.preventDefault();
-      $dropzone.css("background-color", "#f1f1f1");
+      $dropzone.css("background-color", "#b7c3cf");
     });
 
     $dropzone.on("dragleave", function (event) {
