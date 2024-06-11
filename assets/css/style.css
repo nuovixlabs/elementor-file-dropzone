@@ -1,0 +1,62 @@
+.dropzone {
+  --curvyness: 5px;
+  --container-spacing: 20px;
+  --container-push-from-top: 10px;
+
+  --text-size: 16px;
+}
+
+.dropzone {
+  width: 100%;
+  padding: var(--container-spacing);
+  border: 2px dashed var(--e-global-color-50c1647, #00407f);
+  border-radius: var(--curvyness);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: var(--container-push-from-top);
+}
+
+.dropzone:hover {
+  background-color: var(--e-global-color-d80cd3b, #fff);
+}
+
+.dropzone p {
+  margin: 0;
+  font-size: var(--text-size);
+  color: var(--e-global-color-50c1647, #00407f);
+}
+
+.rakesh-hidden {
+  display: none;
+}
+
+#fileList {
+  margin-top: 20px;
+}
+
+.file-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-file {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.remove-file:hover {
+  background-color: #ff1a1a;
+}
