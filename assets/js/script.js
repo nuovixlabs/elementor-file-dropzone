@@ -36,6 +36,8 @@ jQuery(document).ready(function ($) {
       $dropzone.css("background-color", "white");
       const files = event.originalEvent.dataTransfer.files;
       handleFiles(files);
+      // Update the file input with the dropped files
+      updateFileInput(files);
     });
 
     $fileInput.on("change", function () {
@@ -58,6 +60,15 @@ jQuery(document).ready(function ($) {
         $fileItem.append($removeButton);
         $fileList.append($fileItem);
       }
+    }
+
+    // Update the hidden file input with the dropped files
+    function updateFileInput(files) {
+      const dataTransfer = new DataTransfer();
+      for (let i = 0; i < files.length; i++) {
+        dataTransfer.items.add(files[i]);
+      }
+      $fileInput[0].files = dataTransfer.files;
     }
 
     // Clear file list on form submission
