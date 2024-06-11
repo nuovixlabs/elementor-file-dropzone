@@ -8,6 +8,7 @@ This plugin enhances Elementor's file input fields by transforming them into a m
 
 ## TO-DOs
 
+- [ ] Maybe add files count into the dropzone itself when the file is selected, instead of showing a full list?
 - [ ] Ability for the end users to configure the basic styles
 - [ ] Configure the "drag and drop.." label
 - [ ] Inject styles on elementor edit mode, so it wont look like broken
@@ -20,9 +21,11 @@ This plugin enhances Elementor's file input fields by transforming them into a m
 
 ## Changelog
 
-### 1.0
+### 1.5
 
-- Initial release.
+- Revamp dropzone
+- Dismiss file-list based on the successful form submission
+- File-list set max-height
 
 ## License
 

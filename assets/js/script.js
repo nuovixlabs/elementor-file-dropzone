@@ -59,6 +59,13 @@ jQuery(document).ready(function ($) {
         $fileList.append($fileItem);
       }
     }
+
+    // Clear file list on form submission
+    $(document).on("submit_success", function (e) {
+      if ($(e.target).closest("form").find($fileInput).length) {
+        $fileList.empty();
+      }
+    });
   }
 
   // Initialize dropzone for each Elementor file input container

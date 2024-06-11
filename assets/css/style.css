@@ -60,6 +60,9 @@
 }
 
 #fileList {
+  max-height: 90px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .file-item {
